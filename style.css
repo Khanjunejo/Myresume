@@ -69,3 +69,27 @@ a:hover { color: #ffcc00; }
         margin-top: 20px;
     }
 }
+@media print {
+    .container {
+        flex-wrap: nowrap; /* keep left and right side by side */
+    }
+
+    .right {
+        align-items: flex-start; /* keep photo top-aligned */
+    }
+
+    .profile {
+        width: 150px;  /* smaller for PDF */
+        height: 150px;
+    }
+
+    body {
+        background-color: #000; /* black background */
+        color: white;
+    }
+
+    a {
+        color: #00ffff; 
+        text-decoration: underline;
+    }
+}
